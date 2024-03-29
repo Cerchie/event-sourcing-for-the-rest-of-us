@@ -18,4 +18,4 @@ To reproduce:
 
 8. Save the changes. Run Ctrl+C to stop the server, then  `npx next dev` to re-run it. 
 
-9. You should see the downstream error emanating from `db.js`, `Error: Cannot read properties of undefined (reading '0')`, which indicates that the app is past kafka errors.
+9. You should see the downstream error emanating from `db.js`, `Error: Cannot read properties of undefined (reading '0')`, which indicates that the app is past kafka errors. You can confirm that kafka is working here by viewing the messages in your 'test' topic 
