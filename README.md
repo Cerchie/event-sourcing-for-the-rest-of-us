@@ -2,7 +2,7 @@ To reproduce:
 
 1. Clone the repo.
 
-1a. add a file .env in the root dir with values CONFLUENT_API_KEY and CONFLUENT_API_SECRET
+1a. add a file .env in the root dir with values CONFLUENT_API_KEY and CONFLUENT_API_SECRET from a cloud env you've set up with a topic named 'test'
 
 2. npm install
 
