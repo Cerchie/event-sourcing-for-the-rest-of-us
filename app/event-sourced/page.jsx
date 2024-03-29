@@ -1,10 +1,10 @@
 import { redirect } from "next/navigation";
-import { producer } from "../../kafka";
+import { producer } from "../../workingwithkafka";
 import { sql } from "../../db";
 import { ListItem } from "../ListItem";
 
 export default async function Page() {
-  const rows: any = await sql`SELECT * FROM todos;`;
+  const rows = await sql`SELECT * FROM todos;`;
 
   return (
     <div>

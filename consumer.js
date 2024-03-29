@@ -1,9 +1,9 @@
 import { sql } from "./db";
-import { consumer } from "./kafka";
+import { consumer } from "./workingwithkafka";
 
 (async () => {
     await consumer.connect();
-    await consumer.subscribe({ topic: "todo-events", fromBeginning: true });
+    await consumer.subscribe({ topic: "todo-events"});
     await consumer.run({
         eachMessage: async ({ message }) => {
             const { type, payload } = JSON.parse(message.value.toString());

@@ -11,7 +11,7 @@ db.serialize(() => {
     `);
 })
 
-export const sql = (strings: TemplateStringsArray, ...values: any[]) => new Promise((resolve, reject) => {
+export const sql = (strings, values) => new Promise((resolve, reject) => {
     const db = new sqlite3.Database("./local.db");
     let str = '';
     strings.forEach((string, i) => {

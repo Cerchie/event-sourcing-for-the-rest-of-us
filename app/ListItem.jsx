@@ -3,21 +3,15 @@
 import { PropsWithChildren } from "react";
 import {
   toggleEventSourcedCheckbox,
-  toggleTraditionalCheckbox,
 } from "./actions";
 
-type Props = {
-  id: number;
-  completed: boolean;
-  model: "event-sourced" | "traditional";
-};
 
 export function ListItem({
   children,
   model,
   completed,
   id,
-}: PropsWithChildren<Props>) {
+}) {
   return (
     <li>
       <input
